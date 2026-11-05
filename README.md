@@ -15,12 +15,18 @@ Serve the repository with any static HTTP server, for example `python -m http.se
 - Formal portrait and current CV supplied by Aman.
 - Five projects: VeriCV, Commerce Circuit, BookHaven, Patient Management, and DeviceLens.
 - Commerce Circuit and Patient Management are explicitly labelled learning projects. Their light-mode sections show architecture and the current learning focus, without problem/solution framing. Other project descriptions retain their problem, approach, implementation and result. No performance benchmarks or hiring outcomes are invented.
-- Prominent résumé buttons have been removed from the light page. Discreet CV links remain in the background and contact sections.
+- All personal CV/résumé links and buttons have been removed from the light page, including the background and contact sections. VeriCV remains documented as a project. The dark page retains its original CV links.
 - VeriCV copy follows the current project README, including its local-first workflow and source-grounded validation boundary.
 - Writing links to the ELK/Zipkin guide, Medium, Dev.to, and the independent tech labor-market working paper.
 - GitHub, LinkedIn, LeetCode, GeeksforGeeks, email, live DeviceLens and résumé links are preserved.
 
 ## Public GitHub activity
+
+The light page includes a contribution calendar with past-year and individual-year views. The native calendar is interactive by pointer or keyboard: focus a day and use arrows, Home or End to inspect counts. Narrow screens can scroll it horizontally. Metrics show contributions and active days for the selected period, plus the public repository and follower counts from GitHub's REST API.
+
+Calendar data is sourced from the public GitHub profile via [GitHub Contributions API](https://github.com/grubersjoe/github-contributions-api). It includes commits and other qualifying GitHub activity, rather than representing a pure commit count. Counts reflect what GitHub displays publicly; the portfolio does not query private repository details. The upstream API caches results for about one hour. Browser caching is also limited to one hour. Updates are checked when the calendar approaches the viewport and on year changes; they are not guaranteed to be immediate after a push.
+
+`assets/github-contributions.json` and the initial HTML provide a verified fallback, including past-year and historical-year data. External data is validated for dates, counts, levels and continuity before rendering. Year changes update both the calendar and its contribution/active-day totals. Profile counts remain separate from calendar-period totals. No GitHub authentication token is embedded in the page.
 
 The feed shows recent commits authored by `JardaniJovonovich6` in the five selected repositories. It is not a lifetime commit count, contribution graph, performance score, or account-wide activity feed.
 
