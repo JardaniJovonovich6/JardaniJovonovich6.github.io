@@ -105,3 +105,12 @@ if ('IntersectionObserver' in window) {
 } else {
   refreshActivity().catch(() => {});
 }
+
+// User-requested left-to-right toolkit motion, with a persistent pause control per visit.
+const toolkit = document.querySelector('.toolkit');
+const toolkitToggle = document.querySelector('#toolkit-toggle');
+toolkitToggle.addEventListener('click', () => {
+  const paused = toolkit.classList.toggle('is-paused');
+  toolkitToggle.setAttribute('aria-pressed', String(paused));
+  toolkitToggle.querySelector('span').textContent = paused ? 'Play skills' : 'Pause skills';
+});
