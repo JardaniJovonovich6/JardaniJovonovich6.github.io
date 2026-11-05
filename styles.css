@@ -16,4 +16,4 @@
 @media(max-width:680px){.project .project-kicker{font-size:10px}}
 .portrait-scene{background:none}
 .portrait-scene:after{display:none}
-.portrait{height:auto;object-fit:initial;mask-image:radial-gradient(ellipse at 50% 45%,#000 30%,rgba(0,0,0,.96) 45%,rgba(0,0,0,.65) 62%,rgba(0,0,0,.2) 77%,transparent 94%);-webkit-mask-image:radial-gradient(ellipse at 50% 45%,#000 30%,rgba(0,0,0,.96) 45%,rgba(0,0,0,.65) 62%,rgba(0,0,0,.2) 77%,transparent 94%);mask-composite:add;-webkit-mask-composite:source-over}
+.portrait{height:auto;object-fit:initial;mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 30%,rgba(0,0,0,.96) 45%,rgba(0,0,0,.65) 62%,rgba(0,0,0,.2) 77%,transparent 94%);-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 30%,rgba(0,0,0,.96) 45%,rgba(0,0,0,.65) 62%,rgba(0,0,0,.2) 77%,transparent 94%);mask-composite:add;-webkit-mask-composite:source-over}
