@@ -43,7 +43,7 @@ const status = document.querySelector('#player-status');
 let currentTrack = 0;
 let loaded = false;
 let playRequest = 0;
-audio.volume = 0.20;
+audio.volume = 0.10;
 function timecode(seconds) { const s = Math.max(0, Math.floor(seconds || 0)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; }
 function updatePlayer() {
   const playing = !audio.paused && !audio.ended;
