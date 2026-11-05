@@ -1,0 +1,44 @@
+[
+  {
+    "track": 6,
+    "sourceStart": 1153,
+    "duration": 215,
+    "src": "assets/track-06.m4a"
+  },
+  {
+    "track": 7,
+    "sourceStart": 1368,
+    "duration": 295,
+    "src": "assets/track-07.m4a"
+  },
+  {
+    "track": 8,
+    "sourceStart": 1663,
+    "duration": 243,
+    "src": "assets/track-08.m4a"
+  },
+  {
+    "track": 1,
+    "sourceStart": 0,
+    "duration": 214,
+    "src": "assets/track-01.m4a"
+  },
+  {
+    "track": 2,
+    "sourceStart": 214,
+    "duration": 278,
+    "src": "assets/track-02.m4a"
+  },
+  {
+    "track": 3,
+    "sourceStart": 492,
+    "duration": 220,
+    "src": "assets/track-03.m4a"
+  },
+  {
+    "track": 4,
+    "sourceStart": 712,
+    "duration": 209,
+    "src": "assets/track-04.m4a"
+  }
+]
