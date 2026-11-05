@@ -1,0 +1,40 @@
+{
+  "capturedAt": "2026-11-05T18:18:00.2466149Z",
+  "commits": [
+    {
+      "repository": "VeriCV",
+      "message": "docs: add beginner walkthrough and project overview",
+      "date": "2026-11-05T09:03:06Z",
+      "url": "https://github.com/JardaniJovonovich6/VeriCV/commit/ed3bc00ff5e46127172e593f8eda2d9c5388311b",
+      "sha": "ed3bc00"
+    },
+    {
+      "repository": "VeriCV",
+      "message": "docs: describe desktop and MCP workflows",
+      "date": "2026-11-04T20:25:06Z",
+      "url": "https://github.com/JardaniJovonovich6/VeriCV/commit/201adb10da85f6354f0724afc35f3c40b57cf4ca",
+      "sha": "201adb1"
+    },
+    {
+      "repository": "VeriCV",
+      "message": "build: add local desktop launchers and container setup",
+      "date": "2026-11-04T20:25:01Z",
+      "url": "https://github.com/JardaniJovonovich6/VeriCV/commit/f01323df655131cc530c32e336dddac243dcd810",
+      "sha": "f01323d"
+    },
+    {
+      "repository": "DeviceLens",
+      "message": "Redesign DeviceLens report and add privacy guidance (#1)",
+      "date": "2026-10-12T17:28:23Z",
+      "url": "https://github.com/JardaniJovonovich6/DeviceLens/commit/d5ff8daf06aa0fa375238528bf66a84459627183",
+      "sha": "d5ff8da"
+    },
+    {
+      "repository": "DeviceLens",
+      "message": "Transform DeviceLens into a local Browser Privacy Inspector",
+      "date": "2026-10-12T16:55:49Z",
+      "url": "https://github.com/JardaniJovonovich6/DeviceLens/commit/6e235020a2fdbb1ee2387b2ec3481a7f002bca4d",
+      "sha": "6e23502"
+    }
+  ]
+}

@@ -1,25 +1,38 @@
-# Aman Kumar Shaw — portfolio
+# Aman Kumar Shaw — Backend & Systems
 
-Static HTML, CSS, and JavaScript. No build step, framework, tracking, external fonts, or runtime dependencies.
+Résumé-focused portfolio using static HTML, CSS and JavaScript. Warm white, navy, charcoal and tea-brown. No media player, video background, theme modal, analytics, external fonts, or framework dependencies.
 
-The cinematic redesign lives on `dev`. The original portfolio remains on `main`; this branch does not change the live GitHub Pages site unless Pages is explicitly reconfigured or the branch is merged.
+## Branch and publication
 
-## Preview
+The redesign is on `dev`. GitHub Pages currently publishes that branch. `main` retains the original portfolio; it is not changed by these commits.
 
-Serve the repository with a static HTTP server, for example `python -m http.server 8080`, and open the printed local address. Opening `index.html` directly also supports the basic page and media, but an HTTP preview is recommended.
+## Local preview
 
-## Media behavior
+Serve the repository with any static HTTP server, for example `python -m http.server 8080`. An HTTP preview is recommended for the GitHub activity refresh.
 
-- `assets/focus-loop.mp4` is a 720p web export of the approved edit (68.48 seconds of encoded video). It contains **no audio stream**. The video loops, muted, with inline playback.
-- Music is an independent audio player, silent on arrival. No track is requested until the visitor presses the sound button.
-- Order: **6 → 7 → 8 → 1 → 2 → 3 → 4**, then repeat. Closing the player hides controls; the sound button or Pause stops music. Previous/next controls and volume are included.
-- Track source boundaries: 6 = 19:13–22:48; 7 = 22:48–27:43; 8 = 27:43–31:46; 1 = 0:00–3:34; 2 = 3:34–8:12; 3 = 8:12–11:52; 4 = 11:52–15:21. Track 5 is intentionally omitted.
-- The background video loops independently of the longer playlist. Its edit was paced against track 6; later tracks are not individually beat-matched.
-- The muted background starts by default, including when reduced motion is enabled, as requested by Aman. Reduced-motion preferences still disable smooth scrolling and decorative animation. A visitor can explicitly play/pause the background. Browsers may restrict autoplay in power-saving modes; the poster and play control remain available, with another playback attempt on the first interaction.
-- The video pauses in a hidden tab. Audio plays only after user interaction and does not persist as autoplay consent across page loads.
+## Content
 
-## Content and assets
+- Formal portrait and current CV supplied by Aman.
+- Five projects: VeriCV, Commerce Circuit, BookHaven, Patient Management, and DeviceLens.
+- Project descriptions distinguish the problem, approach, simplified flow, implementation, result, and relevant limits. No performance benchmarks or hiring outcomes are invented.
+- VeriCV copy follows the current project README, including its local-first workflow and source-grounded validation boundary.
+- Writing links to the ELK/Zipkin guide, Medium, Dev.to, and the independent tech labor-market working paper.
+- GitHub, LinkedIn, LeetCode, GeeksforGeeks, email, live DeviceLens and résumé links are preserved.
 
-Portrait and current downloadable CV supplied by Aman. Project descriptions and profile URLs come from the supplied CV and original portfolio. The writing section links the Medium ELK/Zipkin guide, Medium profile, Dev.to profile, and the independent tech labor-market study. Existing GitHub, LinkedIn, LeetCode, GeeksforGeeks, and email destinations are retained.
+## Public GitHub activity
 
-Background footage: *Mr. Robot*. Audio: user-supplied focus mix, linked in the site footer. Those third-party media assets are not covered by a new license in this repository.
+The feed shows recent commits authored by `JardaniJovonovich6` in the five selected repositories. It is not a lifetime commit count, contribution graph, performance score, or account-wide activity feed.
+
+The static HTML includes a verified snapshot. When the activity section approaches the viewport, the browser requests up to three commits per project from GitHub's public REST API, sorts the combined results by commit author date, and displays four. API text is inserted as text; links must match the corresponding GitHub repository commit path.
+
+The public results can be cached in the visitor's browser for five minutes. No identifier, analytics record, authentication token or private repository data is stored. The feed checks once per page load when viewed; it does not promise instant updates while a page remains open. Only pushed commits can appear. GitHub rate limits, network errors and browser restrictions may prevent refresh; the saved snapshot remains visible with a status message.
+
+## Accessibility and resilience
+
+Semantic headings, skip navigation, keyboard-operable native project disclosures, focus indicators, responsive layouts and reduced-motion-aware smooth scrolling. The portfolio's content, project links and saved activity remain available without JavaScript.
+
+## Assets
+
+Technology icons are from [Devicon](https://github.com/devicons/devicon), under its [MIT license](https://github.com/devicons/devicon/blob/master/LICENSE). Logos represent their respective projects and remain subject to their owners' trademarks. Icons are served locally in monochrome. The formal portrait remains unaltered apart from resize and WebP encoding.
+
+Legacy video, music and hooded portrait assets were removed from the current site. Earlier commits retain the previous design.
