@@ -14,3 +14,6 @@
 .live-badge{display:inline-flex;align-items:center;gap:7px;color:var(--accent)}.live-badge .status-dot{width:4px;height:4px}.project-live{display:flex;width:fit-content;margin-top:20px;color:var(--accent)}
 .project .project-kicker{font-size:11px}
 @media(max-width:680px){.project .project-kicker{font-size:10px}}
+.portrait-scene{background:none}
+.portrait-scene:after{display:none}
+.portrait{height:auto;object-fit:initial;mask-image:radial-gradient(ellipse at 50% 45%,#000 30%,rgba(0,0,0,.96) 45%,rgba(0,0,0,.65) 62%,rgba(0,0,0,.2) 77%,transparent 94%);-webkit-mask-image:radial-gradient(ellipse at 50% 45%,#000 30%,rgba(0,0,0,.96) 45%,rgba(0,0,0,.65) 62%,rgba(0,0,0,.2) 77%,transparent 94%);mask-composite:add;-webkit-mask-composite:source-over}
