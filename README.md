@@ -15,7 +15,7 @@ Serve the repository with a static HTTP server, for example `python -m http.serv
 - Order: **6 → 7 → 8 → 1 → 2 → 3 → 4**, then repeat. Closing the player hides controls; the sound button or Pause stops music. Previous/next controls and volume are included.
 - Track source boundaries: 6 = 19:13–22:48; 7 = 22:48–27:43; 8 = 27:43–31:46; 1 = 0:00–3:34; 2 = 3:34–8:12; 3 = 8:12–11:52; 4 = 11:52–15:21. Track 5 is intentionally omitted.
 - The background video loops independently of the longer playlist. Its edit was paced against track 6; later tracks are not individually beat-matched.
-- Reduced-motion preferences pause background playback and disable smooth scrolling. A visitor can explicitly play/pause the background. Browsers may also restrict autoplay in power-saving modes; the poster remains visible.
+- The muted background starts by default, including when reduced motion is enabled, as requested by Aman. Reduced-motion preferences still disable smooth scrolling and decorative animation. A visitor can explicitly play/pause the background. Browsers may restrict autoplay in power-saving modes; the poster and play control remain available, with another playback attempt on the first interaction.
 - The video pauses in a hidden tab. Audio plays only after user interaction and does not persist as autoplay consent across page loads.
 
 ## Content and assets

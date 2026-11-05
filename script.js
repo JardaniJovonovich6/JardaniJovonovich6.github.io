@@ -1,23 +1,33 @@
 'use strict';
 const video = document.querySelector('#ambient-video');
 const motion = document.querySelector('#motion-toggle');
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let userPausedVideo = false;
-const syncMotion = () => {
-  const paused = userPausedVideo || reducedMotion.matches || document.hidden;
-  if (paused) video.pause(); else video.play().catch(() => {});
-  motion.textContent = paused ? 'Play background' : 'Pause background';
-  motion.setAttribute('aria-pressed', String(paused));
+const updateMotionControl = () => {
+  motion.textContent = video.paused ? 'Play background' : 'Pause background';
+  motion.setAttribute('aria-pressed', String(video.paused));
+};
+const syncMotion = async () => {
+  if (userPausedVideo || document.hidden) video.pause();
+  else {
+    try { await video.play(); } catch { /* Keep the poster and explicit play control available. */ }
+  }
+  updateMotionControl();
 };
 video.muted = true;
+video.defaultMuted = true;
 motion.addEventListener('click', () => {
-  if (reducedMotion.matches && video.paused) {
-    userPausedVideo = false;
-    video.play().then(() => { motion.textContent = 'Pause background'; motion.setAttribute('aria-pressed', 'false'); }).catch(() => {});
-  } else { userPausedVideo = !video.paused; syncMotion(); }
+  userPausedVideo = !video.paused;
+  syncMotion();
 });
 document.addEventListener('visibilitychange', syncMotion);
-reducedMotion.addEventListener('change', syncMotion);
+video.addEventListener('loadeddata', syncMotion);
+video.addEventListener('play', updateMotionControl);
+video.addEventListener('pause', updateMotionControl);
+window.addEventListener('pageshow', syncMotion);
+document.addEventListener('pointerdown', event => {
+  if (event.target instanceof Element && event.target.closest('#motion-toggle')) return;
+  if (!userPausedVideo && video.paused) syncMotion();
+}, { once: true });
 syncMotion();
 
 const tracks = [
