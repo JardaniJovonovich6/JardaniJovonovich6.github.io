@@ -4,7 +4,7 @@ Two portfolio presentations using static HTML, CSS and JavaScript. The default l
 
 ## Branch and publication
 
-The redesign is on `dev`. GitHub Pages currently publishes that branch. `main` retains the original portfolio; it is not changed by these commits.
+The redesign is on `dev`. GitHub Pages currently publishes that branch. `main` retains the original portfolio design and has received the same public-contact privacy fix.
 
 ## Local preview
 
@@ -12,13 +12,13 @@ Serve the repository with any static HTTP server, for example `python -m http.se
 
 ## Content
 
-- Formal portrait and current CV supplied by Aman.
+- Formal portrait supplied by Aman. The personal CV is not hosted publicly in the current site.
 - Five projects: VeriCV, Commerce Circuit, BookHaven, Patient Management, and DeviceLens.
 - Commerce Circuit and Patient Management are explicitly labelled learning projects. Their light-mode sections show architecture and the current learning focus, without problem/solution framing. Other project descriptions retain their problem, approach, implementation and result. No performance benchmarks or hiring outcomes are invented.
-- All personal CV/résumé links and buttons have been removed from the light page, including the background and contact sections. VeriCV remains documented as a project. The dark page retains its original CV links.
+- All personal CV/résumé links and buttons have been removed from both modes. The hosted CV file has also been removed. VeriCV remains documented as a project.
 - VeriCV copy follows the current project README, including its local-first workflow and source-grounded validation boundary.
 - Writing links to the ELK/Zipkin guide, Medium, Dev.to, and the independent tech labor-market working paper.
-- GitHub, LinkedIn, LeetCode, GeeksforGeeks, email, live DeviceLens and résumé links are preserved.
+- GitHub, LinkedIn, LeetCode, GeeksforGeeks, and live DeviceLens links are preserved. Both modes use the dedicated public contact address `tester11aman@gmail.com`.
 
 ## Public GitHub activity
 
